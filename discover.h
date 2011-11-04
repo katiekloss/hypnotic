@@ -1,0 +1,1 @@
+void discover_device();
