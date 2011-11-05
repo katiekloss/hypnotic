@@ -1,1 +1,1 @@
-void discover_device();
+void discover();
