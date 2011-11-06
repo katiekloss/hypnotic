@@ -1,5 +1,7 @@
 #include "discover.h"
 #include "record.h"
+#include "schedule.h"
+
 #include <stdio.h>
 #include <time.h>
 
@@ -29,6 +31,10 @@ int main(int argc, char *argv[])
                 printf("Usage: hypnotic record <channel> <program number> <end epoch> <filename>\n");
                 exit(0);
             }
+        }
+        else if(!strncmp(argv[1], "schedule_once", 13))
+        {
+            process_schedules();
         }
     }
     return 0;
